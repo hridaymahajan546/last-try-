@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AFTER Login Page</title>
+</head>
+
+
+<body>
+
+    <h1 id="welcome"></h1>
+    <p>Your login was successful!</p>
+
+    <p id="thanks"></p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get("username");
+
+        document.getElementById("welcome").innerText = "WELCOME " + username;
+        document.getElementById("thanks").innerText =
+            "Thank you for logging in, " + username + ". Wishing you and your family a very Happy New Year 🎉";
+
+    </script>
+
+
+
+    <!-- <h1>WELCOME name</h1><br> -->
+    <!-- <p>Your login was successful!</p><br><br> -->
+
+    <!-- <p>Thank you for logging in, name="username"! , AND WISH YOU AND YOUR FAMILY A VERY HAPPY NEW YEAR </p> -->
+
+    <form action="MAIN PAGE MY MSG.HTML" method="get">
+        <input type="submit" value="Submit">
+        <label for="Birthday">Birthday:</label><br>
+        <input type="date" id="Birthday" name="Birthday" required><br><br>
+    </form><br>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOW6PemFPjmzQrUJAju6K0zcGJ5i-f7iD0Gg&s" alt="laugh dog">
+
+    <h1>THANK YOU FOR SHARING YOUR BIRTHDATE</h1>
+
+    
+
+</body>
+
+</html>
